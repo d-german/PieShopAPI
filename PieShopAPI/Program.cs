@@ -21,14 +21,12 @@ namespace PieShopAPI
                 {
                     var context = services.GetRequiredService<AppDbContext>();
                     DbInitializer.Seed(context);
-
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
                     throw;
                 }
-
             }
 
             host.Run();

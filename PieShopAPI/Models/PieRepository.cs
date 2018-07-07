@@ -14,7 +14,7 @@ namespace PieShopAPI.Models
 
         public IEnumerable<Pie> GetAllPies()
         {
-            return this._appDbContext.Pies;
+            return _appDbContext.Pies;
         }
 
         public Pie GetPieById(int pieId)
